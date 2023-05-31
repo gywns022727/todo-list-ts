@@ -112,6 +112,7 @@ function App() {
             };
 
             const toggleEditTodo = () => {
+              setEditName(name);
               setEditId(() => (isEdit ? undefined : id));
             };
 
@@ -127,7 +128,7 @@ function App() {
             return (
               <ToDo key={id}>
                 {isEdit ? (
-                  <Input defaultValue={name} onChange={handlEditName} />
+                  <Input value={editName} onChange={handlEditName} />
                 ) : (
                   name
                 )}
