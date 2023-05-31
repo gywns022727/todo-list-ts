@@ -98,7 +98,7 @@ function App() {
             onChange={handleInputChange}
             onKeyUp={handlePressEnter}
             maxLength={7}
-            width="250px"
+            width="200px"
           />
           <Button onClick={addTodo}>추가</Button>
           <Button onClick={resetTodo}>초기화</Button>
