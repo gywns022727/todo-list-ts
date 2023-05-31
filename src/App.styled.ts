@@ -36,7 +36,6 @@ export const Input = styled.input`
 
 export const Button = styled.button<{ backgroundColor?: string }>`
   margin-left: 5px;
-  margin-bottom: 5px;
   width: 50px;
   height: 25px;
   color: #fff;
@@ -45,6 +44,10 @@ export const Button = styled.button<{ backgroundColor?: string }>`
   ${({ backgroundColor }) =>
     `background-color: ${backgroundColor || "#4489ff"};`}
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 280px) {
+    margin-bottom: 5px;
+  }
 `;
 
 export const List = styled.ul`
@@ -62,7 +65,7 @@ export const ToDo = styled.li`
   justify-content: space-between;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  background-color: #eee;
+  background-color: #fafafa;
   > div {
     display: flex;
     @media screen and (max-width: 280px) {
